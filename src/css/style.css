@@ -217,3 +217,9 @@ p { margin: 0 0 1em; }
   .pillars, .process { grid-template-columns: 1fr; }
   .pillar { padding: 26px 22px; }
 }
+
+/* Logo file is black script on transparent: show it white on the dark header and footer */
+.brand img, .footer-logo { filter: invert(1); }
+.brand img { height: 58px; }
+.nav a.btn-light { color: var(--ink); }
+.nav a.btn-light:hover { color: var(--ink); }
