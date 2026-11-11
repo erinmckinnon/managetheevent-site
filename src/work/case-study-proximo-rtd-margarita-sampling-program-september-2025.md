@@ -5,6 +5,8 @@ summary: "How strategic sampling across 118 events helped shoppers connect with 
 category: "Sampling programs"
 client: "Proximo Spirits"
 order: 6
+figure: "118 events"
+figure_label: "and nearly 4,000 samples poured at Total Wine"
 date: 2025-12-09
 image: /uploads/work/proximo-rtd-total-wine.png
 pdf: "https://www.canva.com/design/DAG7BR0uSNI/Tv7jWw7J8PjesnDSTd2SZQ/view"

@@ -5,6 +5,8 @@ summary: "Derby at the Pier 2025 was a full-scale showcase of hospitality, commu
 category: "Sponsorships"
 client: "Derby at the Pier · Brown-Forman"
 order: 4
+figure: "2,400+ guests"
+figure_label: "and $75,000 raised for three local nonprofits"
 date: 2025-12-09
 image: /uploads/work/derby-at-the-pier.jpg
 featured: true

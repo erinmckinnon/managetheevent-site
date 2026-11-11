@@ -5,6 +5,8 @@ summary: "How in-store education and strategic sampling drove trial, conversion,
 category: "Sampling programs"
 client: "Proximo Spirits"
 order: 5
+figure: "4 tequilas"
+figure_label: "taught side by side in ABC stores across Florida"
 date: 2025-12-09
 image: /uploads/work/proximo-abc.jpg
 pdf: "https://www.canva.com/design/DAG6eaK5xp4/sQPfPW5rHK3oCGzEJhek7g/view"

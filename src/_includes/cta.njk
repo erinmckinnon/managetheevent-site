@@ -1,7 +1,11 @@
-<section class="cta">
-  <div class="wrap cta-inner">
+<section class="curtain" data-spotlight>
+  <div class="stage-light" aria-hidden="true"></div>
+  <div class="wrap curtain-inner">
     <h2>{{ home.cta_title }}</h2>
     <p>{{ home.cta_text }}</p>
-    <a class="btn btn-light" href="/contact/">Start a project</a>
+    <div class="stage-actions">
+      <a class="btn btn-brass" href="/contact/">Start a project</a>
+      {% if settings.email %}<a class="btn btn-line" href="mailto:{{ settings.email }}">{{ settings.email }}</a>{% endif %}
+    </div>
   </div>
 </section>

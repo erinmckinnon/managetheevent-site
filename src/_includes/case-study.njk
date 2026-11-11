@@ -1,28 +1,32 @@
 ---
 layout: base.njk
 ---
-<article class="case">
+<article>
   <header class="case-head">
-    <div class="wrap narrow">
-      <p class="eyebrow"><a href="/work/">Work</a> · {{ category }}</p>
+    <div class="wrap case-head-inner">
+      <p class="crumb"><a href="/work/">Work</a> / {{ category }}</p>
       <h1>{{ title }}</h1>
-      {% if subtitle %}<p class="lede">{{ subtitle }}</p>{% endif %}
-      <p class="meta">{% if client %}{{ client }} · {% endif %}<time datetime="{{ date | isoDate }}">{{ date | longDate }}</time> · By {{ settings.owner }}</p>
+      {% if subtitle %}<p class="case-sub">{{ subtitle }}</p>{% endif %}
+      <dl class="case-facts">
+        {% if client %}<div><dt>Client</dt><dd>{{ client }}</dd></div>{% endif %}
+        {% if figure %}<div><dt>Scale</dt><dd>{{ figure }} {{ figure_label }}</dd></div>{% endif %}
+        <div><dt>Published</dt><dd><time datetime="{{ date | isoDate }}">{{ date | longDate }}</time></dd></div>
+      </dl>
     </div>
     {% if image %}<div class="wrap case-hero"><img src="{{ image }}" alt=""></div>{% endif %}
   </header>
-  <div class="wrap narrow prose">
-    {{ content | safe }}
-    {% if pdf %}<p class="pdf"><a class="btn btn-primary" href="{{ pdf }}" target="_blank" rel="noopener">View the full case study (PDF)</a></p>{% endif %}
+  <div class="paper">
+    <div class="prose">
+      {{ content | safe }}
+      {% if pdf %}<p><a class="btn btn-plum" href="{{ pdf }}" target="_blank" rel="noopener">Open the full case study (PDF)</a></p>{% endif %}
+    </div>
+    {% if gallery and gallery.length %}<div class="wrap gallery">{% for g in gallery %}<img src="{{ g }}" alt="" loading="lazy">{% endfor %}</div>{% endif %}
   </div>
-  {% if gallery and gallery.length %}
-  <div class="wrap gallery">{% for g in gallery %}<img src="{{ g }}" alt="" loading="lazy">{% endfor %}</div>
-  {% endif %}
 </article>
-<section class="section">
+<section class="more-work">
   <div class="wrap">
-    <h2 class="section-title">More work</h2>
-    <div class="grid cards">
+    <h2>More work</h2>
+    <div class="tiles">
       {% set shown = 0 %}
       {% for item in collections.work %}{% if item.url != page.url and shown < 3 %}{% set shown = shown + 1 %}{% include "work-card.njk" %}{% endif %}{% endfor %}
     </div>

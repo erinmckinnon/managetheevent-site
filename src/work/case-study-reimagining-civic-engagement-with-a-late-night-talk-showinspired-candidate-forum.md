@@ -5,6 +5,8 @@ summary: "How we reinvented the District 5 candidate forum with a late-night tal
 category: "Civic"
 client: "Tampa Heights Civic Association"
 order: 1
+figure: "Talk-show format"
+figure_label: "moderators seated with the candidates, not behind podiums"
 date: 2025-12-10
 image: /uploads/work/candidate-forum.jpg
 featured: true

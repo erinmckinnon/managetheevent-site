@@ -5,14 +5,13 @@ permalink: /work/
 summary: Case studies from Manage the Event, covering civic forums, operations systems, signature events, sponsorships, and statewide sampling programs.
 ---
 <section class="page-head">
-  <div class="wrap narrow">
-    <p class="eyebrow">Insights and case studies</p>
+  <div class="wrap">
     <h1>Work</h1>
-    <p class="lede">A look inside the forums, fundraisers, field programs, and systems I've built and run.</p>
+    <p class="page-lede">Forums, fundraisers, field programs, and the systems behind them.</p>
   </div>
 </section>
-<section class="section tight">
-  <div class="wrap grid cards">
+<section class="work-index">
+  <div class="wrap tiles">
     {% for item in collections.work %}{% include "work-card.njk" %}{% endfor %}
   </div>
 </section>

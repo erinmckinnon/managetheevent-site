@@ -5,6 +5,8 @@ summary: "A behind-the-scenes look at how the Charity Polo Classic was built fro
 category: "Signature events"
 client: "Charity Polo Classic"
 order: 3
+figure: "3 months"
+figure_label: "from a blank page to an inaugural signature event"
 date: 2025-12-09
 image: /uploads/work/charity-polo.jpg
 gallery:
