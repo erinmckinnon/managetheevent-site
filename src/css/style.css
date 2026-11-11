@@ -58,7 +58,7 @@ p { margin: 0 0 1em; }
 .stage { min-height: 100svh; display: flex; align-items: flex-end; }
 .stage-inner { padding: 9rem 0 3.5rem; }
 .stage-title { font-size: clamp(3.4rem, 11.5vw, 11.5rem); line-height: .88; font-weight: 500; letter-spacing: -0.035em; max-width: 11ch;
-  background: radial-gradient(420px circle at var(--x) var(--y), var(--light) 0 45%, #d9c7d3 75%, #8f7489 100%);
+  background: radial-gradient(420px circle at var(--x) var(--y), var(--light) 0 45%, #dccbd6 75%, #a88fa1 100%);
   background-attachment: fixed;
   -webkit-background-clip: text; background-clip: text; color: transparent; }
 .stage-foot { display: grid; grid-template-columns: minmax(0, 34rem) auto; justify-content: space-between; align-items: end; gap: 2rem; margin-top: 3rem; }
@@ -130,7 +130,7 @@ p { margin: 0 0 1em; }
 .curtain { padding: 8rem 0; border-top: 1px solid #fff3e014; }
 .curtain-inner { text-align: center; }
 .curtain h2 { font-size: clamp(4rem, 13vw, 12rem); line-height: .9; letter-spacing: -0.035em;
-  background: radial-gradient(420px circle at var(--x) var(--y), var(--light) 0 45%, #d9c7d3 75%, #8f7489 100%);
+  background: radial-gradient(420px circle at var(--x) var(--y), var(--light) 0 45%, #dccbd6 75%, #a88fa1 100%);
   background-attachment: fixed; -webkit-background-clip: text; background-clip: text; color: transparent; }
 .curtain p { color: var(--mauve); font-size: 1.2rem; max-width: 30em; margin: 2rem auto 2.5rem; }
 .curtain .stage-actions { justify-content: center; }
@@ -239,3 +239,4 @@ p { margin: 0 0 1em; }
   .stage-title, .curtain h2 { background: none; color: var(--light); }
   .stage-light { background-attachment: scroll; }
 }
+.credit span { white-space: nowrap; }
