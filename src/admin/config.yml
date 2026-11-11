@@ -33,6 +33,8 @@ collections:
       - { label: "Category", name: category, widget: string, hint: "e.g. Civic, Sampling programs, Signature events" }
       - { label: "Client / organization", name: client, widget: string, required: false }
       - { label: "Date", name: date, widget: datetime, date_format: "MMM D, YYYY", time_format: false, format: "YYYY-MM-DD" }
+      - { label: "Big number (e.g. 118 events)", name: figure, widget: string, required: false }
+      - { label: "Big number caption", name: figure_label, widget: string, required: false }
       - { label: "Order", name: order, widget: number, value_type: int, default: 10 }
       - { label: "Featured on homepage", name: featured, widget: boolean, default: false, required: false }
       - { label: "Main photo", name: image, widget: image }
@@ -49,38 +51,32 @@ collections:
         name: home
         file: src/_data/home.json
         fields:
-          - { label: "Small line above headline", name: hero_kicker, widget: string }
-          - { label: "Headline", name: hero_title, widget: string }
-          - { label: "Intro (blank line = new paragraph)", name: hero_intro, widget: text }
-          - { label: "“Currently” note", name: hero_note, widget: string, required: false }
-          - { label: "Photo", name: hero_image, widget: image }
-          - label: "Numbers strip"
-            name: stats
+          - { label: "Big headline", name: hero_title, widget: string }
+          - { label: "Intro under the headline", name: hero_intro, widget: text }
+          - { label: "“Now running” note", name: hero_note, widget: string, required: false }
+          - { label: "Statement heading", name: manifesto_title, widget: string }
+          - { label: "Statement text (blank line = new paragraph)", name: manifesto_text, widget: text }
+          - { label: "Run of show heading", name: ros_title, widget: string }
+          - { label: "Run of show intro", name: ros_intro, widget: string }
+          - label: "Run of show steps"
+            name: run_of_show
             widget: list
-            fields: [{ label: Number, name: number, widget: string }, { label: Label, name: label, widget: string }]
-          - { label: "Big statement heading", name: manifesto_title, widget: string }
-          - { label: "Big statement text", name: manifesto_text, widget: text }
+            fields: [{ label: When, name: when, widget: string }, { label: Cue, name: cue, widget: string }, { label: What happens, name: text, widget: text }]
           - { label: "Services heading", name: services_title, widget: string }
-          - { label: "Services intro", name: services_intro, widget: string }
           - label: "Services"
             name: services
             widget: list
-            fields:
-              - { label: Title, name: title, widget: string }
-              - { label: Description, name: text, widget: text }
-              - { label: "Bullet points", name: points, widget: list, required: false, field: { label: Point, name: point, widget: string } }
-          - { label: "Process heading", name: process_title, widget: string }
-          - label: "Process steps"
-            name: process
+            fields: [{ label: Title, name: title, widget: string }, { label: Description, name: text, widget: text }]
+          - { label: "Bio heading", name: bio_title, widget: string }
+          - { label: "Bio text (blank line = new paragraph)", name: bio_text, widget: text }
+          - { label: "Bio photo", name: bio_image, widget: image }
+          - { label: "Credits heading", name: credits_title, widget: string }
+          - label: "Credits"
+            name: credits
             widget: list
-            fields: [{ label: Title, name: title, widget: string }, { label: Text, name: text, widget: text }]
-          - { label: "Roles heading", name: roles_title, widget: string }
-          - label: "Current roles"
-            name: roles
-            widget: list
-            fields: [{ label: Organization, name: org, widget: string }, { label: Role, name: role, widget: string }, { label: Description, name: text, widget: text }]
-          - { label: "Bottom banner heading", name: cta_title, widget: string }
-          - { label: "Bottom banner text", name: cta_text, widget: string }
+            fields: [{ label: Group, name: group, widget: string }, { label: Names, name: names, widget: list, field: { label: Name, name: name, widget: string } }]
+          - { label: "Closing headline", name: cta_title, widget: string }
+          - { label: "Closing text", name: cta_text, widget: string }
       - label: "👤 About"
         name: about
         file: src/_data/about.json
