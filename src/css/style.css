@@ -223,3 +223,7 @@ p { margin: 0 0 1em; }
 .brand img { height: 58px; }
 .nav a.btn-light { color: var(--ink); }
 .nav a.btn-light:hover { color: var(--ink); }
+@media (max-width: 960px) {
+  .hero-photo img { object-position: 96% 15%; }
+  .stats-grid { column-gap: 24px; }
+}
