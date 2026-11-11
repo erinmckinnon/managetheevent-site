@@ -1,0 +1,5 @@
+# Old Duda blog index and common old paths
+/blog          /work/   301
+/blog/*        /work/   301
+/insights      /work/   301
+/case-studies  /work/   301

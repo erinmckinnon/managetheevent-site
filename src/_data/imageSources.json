@@ -1,0 +1,17 @@
+{
+  "_note": "Photos copied from the old Duda (DueTo) site. scripts/fetch-images.mjs downloads any that are missing from src/uploads at build time, so the live site never links to Duda. Once they are saved in the repo, this list is just a record.",
+  "uploads/mte-logo.png": "https://irp.cdn-website.com/43d05b49/dms3rep/multi/opt/MANAGE-THE-EVENT-LOGO-9-630c3416-a9cf8223-79fa3ea8-1920w.png",
+  "uploads/erin-hero.png": "https://irp.cdn-website.com/43d05b49/dms3rep/multi/opt/ChatGPT+Image+Apr+21-+2026+at+07_35_34+PM-1920w.png",
+  "uploads/work/candidate-forum.jpg": "https://irp.cdn-website.com/43d05b49/dms3rep/multi/opt/A6B9967C-3DC2-4D2C-8B48-A29098061BA77965ED75-33B1-4DA8-9BD5-9A5DFB5588EC-1920w.jpeg",
+  "uploads/work/candidate-forum-2.jpg": "https://irp.cdn-website.com/43d05b49/dms3rep/multi/opt/558921473_25017790064498898_9101495724543599292_n-1920w.jpg",
+  "uploads/work/mg-airtable-system.png": "https://irp.cdn-website.com/43d05b49/dms3rep/multi/opt/Screenshot+2024-06-08+at+10.35.16%C3%A2--AM-1920w.png",
+  "uploads/work/mg-airtable-ui.png": "https://irp.cdn-website.com/43d05b49/dms3rep/multi/opt/Minimalist-Website-Launch-Computer-Mockup-Instagram-Post-1920w.png",
+  "uploads/work/charity-polo.jpg": "https://irp.cdn-website.com/43d05b49/dms3rep/multi/opt/tbt_20120330_T029-1920w.jpg",
+  "uploads/work/charity-polo-2.png": "https://irp.cdn-website.com/43d05b49/dms3rep/multi/opt/Untitled+design-16-1920w.png",
+  "uploads/work/charity-polo-3.jpg": "https://irp.cdn-website.com/43d05b49/dms3rep/multi/opt/south_pinellas_edition_20120329_W003+copy-1920w.jpg",
+  "uploads/work/charity-polo-4.jpg": "https://irp.cdn-website.com/43d05b49/dms3rep/multi/opt/Reeves+Charity+Polo+Classic+looks+to+build+on+inaugural+success-1920w.JPG",
+  "uploads/work/derby-at-the-pier.jpg": "https://irp.cdn-website.com/43d05b49/dms3rep/multi/opt/13UglyMenDerbyParty2025EventPhotographybyBryanEdwardCreative_Tampa-St.PeteEventPhotographer-2-1920w.jpg",
+  "uploads/work/derby-at-the-pier-2.jpg": "https://irp.cdn-website.com/43d05b49/dms3rep/multi/opt/StephenZane-Derby25-180-1920w.jpg",
+  "uploads/work/proximo-abc.jpg": "https://irp.cdn-website.com/43d05b49/dms3rep/multi/opt/ooEjAYRjdqLyart-70mtv5A-KityCa3ycXFKQexZFx4-1920w.jpeg",
+  "uploads/work/proximo-rtd-total-wine.png": "https://irp.cdn-website.com/43d05b49/dms3rep/multi/opt/Gotoi5GKM8Fiio4uXFBsQBDWkk8R1xQdKlEMhHJTZPw-1920w.png"
+}

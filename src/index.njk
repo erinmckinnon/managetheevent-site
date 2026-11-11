@@ -1,0 +1,88 @@
+---
+layout: base.njk
+---
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow">{{ home.hero_kicker }}</p>
+      <h1>{{ home.hero_title }}</h1>
+      <div class="hero-intro">{{ home.hero_intro | paras | safe }}</div>
+      <div class="actions"><a class="btn btn-primary" href="/contact/">Start a project</a><a class="btn btn-ghost" href="/work/">See the work</a></div>
+      {% if home.hero_note %}<p class="hero-note"><span class="dot" aria-hidden="true"></span>{{ home.hero_note }}</p>{% endif %}
+    </div>
+    {% if home.hero_image %}<div class="hero-photo"><img src="{{ home.hero_image }}" alt="Erin McKinnon"></div>{% endif %}
+  </div>
+</section>
+
+{% if home.stats.length %}
+<section class="stats" aria-label="By the numbers">
+  <div class="wrap stats-grid">
+    {% for s in home.stats %}<div class="stat"><strong>{{ s.number }}</strong><span>{{ s.label }}</span></div>{% endfor %}
+  </div>
+</section>
+{% endif %}
+
+<section class="section manifesto">
+  <div class="wrap manifesto-grid">
+    <h2>{{ home.manifesto_title }}</h2>
+    <div class="big-prose">{{ home.manifesto_text | paras | safe }}</div>
+  </div>
+</section>
+
+<section class="section alt" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Services</p>
+      <h2 class="section-title">{{ home.services_title }}</h2>
+      <p class="muted">{{ home.services_intro }}</p>
+    </div>
+    <div class="pillars">
+      {% for s in home.services %}
+      <div class="pillar">
+        <span class="num">{{ "0" if loop.index < 10 }}{{ loop.index }}</span>
+        <h3>{{ s.title }}</h3>
+        <p>{{ s.text }}</p>
+        {% if s.points.length %}<ul>{% for p in s.points %}<li>{{ p }}</li>{% endfor %}</ul>{% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Process</p><h2 class="section-title">{{ home.process_title }}</h2></div>
+    <ol class="process">
+      {% for p in home.process %}<li><span class="step">{{ loop.index }}</span><h3>{{ p.title }}</h3><p>{{ p.text }}</p></li>{% endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <div class="section-head row">
+      <div><p class="eyebrow">Case studies</p><h2 class="section-title">Selected work</h2></div>
+      <a class="link" href="/work/">All case studies <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="grid cards">
+      {% for item in collections.work | featuredFirst | head(3) %}{% include "work-card.njk" %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+{% if home.roles.length %}
+<section class="section">
+  <div class="wrap roles-grid">
+    <div>
+      <p class="eyebrow">Right now</p>
+      <h2 class="section-title">{{ home.roles_title }}</h2>
+      <p class="muted">Several hats, one approach. <a href="/about/">More about me →</a></p>
+    </div>
+    <ul class="roles">
+      {% for r in home.roles %}<li><div class="role-head"><strong>{{ r.org }}</strong><span>{{ r.role }}</span></div><p>{{ r.text }}</p></li>{% endfor %}
+    </ul>
+  </div>
+</section>
+{% endif %}
+
+{% include "cta.njk" %}

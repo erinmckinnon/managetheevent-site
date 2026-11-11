@@ -1,0 +1,46 @@
+{
+  "hero_kicker": "Erin McKinnon · Manage the Event · Tampa Bay and nationwide",
+  "hero_title": "When it has to go right, call Erin.",
+  "hero_intro": "I build and run the operations behind events, campaigns, and brand programs: the plan, the people, the systems, and the report at the end.\n\nOne forum or 800 stores, a gala or a city-wide race. If it's yours to pull off, I'll get it handled.",
+  "hero_note": "Currently running operations for a Tampa mayoral campaign and statewide brand programs.",
+  "hero_image": "/uploads/erin-hero.png",
+
+  "manifesto_title": "An “event” is anything that has to happen on time.",
+  "manifesto_text": "A launch. A candidate forum. A Derby party on the water. A statewide sampling program. A press release that has to land tonight. A situation that's going sideways and needs someone to take the wheel.\n\nI named the company Manage the Event because the job is always the same: figure out what done looks like, build the structure to get there, and run it until it's finished.",
+
+  "stats": [
+    { "number": "176", "label": "events across 20 states in one weekend" },
+    { "number": "118", "label": "retail sampling events in a single program" },
+    { "number": "2,400+", "label": "guests at Derby at the Pier 2025" },
+    { "number": "$75K", "label": "donated to three local nonprofits" }
+  ],
+
+  "services_title": "What I handle",
+  "services_intro": "Four kinds of work, one way of doing it.",
+  "services": [
+    { "title": "Events and production", "text": "Concept, branding, run of show, vendors, sponsors, staffing, and the night itself. Fundraisers, signature community events, civic forums, and VIP hospitality.", "points": ["Run of show and stage management", "Sponsorship and VIP experiences", "Event identity and promo materials"] },
+    { "title": "Campaign operations", "text": "The infrastructure behind a campaign, so the candidate can campaign: fundraising operations, volunteers, events, messaging calendars, and the tools that tie them together.", "points": ["Fundraising ops and donor tracking", "Volunteer coordination", "Campaign events and websites"] },
+    { "title": "Field programs and brand activations", "text": "Statewide and national programs for spirits and consumer brands, with every visit tracked: talent booking, routes, store recaps, photos, and live client reporting.", "points": ["Sampling and retail activation programs", "Tracked field rep programs", "Talent booking at national scale"] },
+    { "title": "Systems, tools, and reporting", "text": "Custom Airtable builds and simple websites that make the work run itself, plus recap executive summaries clients actually read.", "points": ["Airtable with Twilio, SendGrid, Front, MiniExtensions, and APIs", "Websites with an easy editor for non-technical teams", "Recap reports and case studies"] }
+  ],
+
+  "process_title": "How I work",
+  "process": [
+    { "title": "Define done", "text": "What has to be true when it's over: the turnout, the budget, the result, the story you want to tell." },
+    { "title": "Build the system", "text": "Timeline, team, tools, and tracking, set up before the rush so nothing lives in someone's head." },
+    { "title": "Run it", "text": "On site or across 20 states. Clear owners, fast decisions, and someone watching every detail." },
+    { "title": "Report back", "text": "Clean recaps, real numbers, and what to do next time, ready to hand to your boss, board, or client." }
+  ],
+
+  "roles_title": "Where you'll find me",
+  "roles": [
+    { "role": "Founder", "org": "Manage the Event", "text": "Event management and operational consulting for organizations across Tampa Bay and nationwide." },
+    { "role": "National Talent Booker", "org": "Michele & Group", "text": "Promotional staffing for spirits and beverage brands across hundreds of events, run on an Airtable platform I designed." },
+    { "role": "Campaign Operations Lead", "org": "Tampa mayoral campaign", "text": "Fundraising operations, volunteers, messaging, events, and the campaign website." },
+    { "role": "Events, board, and tech systems", "org": "13 Ugly Men Foundation", "text": "Event planning, including Derby at the Pier on the St. Pete Pier, plus board coordination and the foundation's systems." },
+    { "role": "Board member", "org": "Tampa Heights Civic Association", "text": "Neighborhood events, civic forums, membership, and a new website for the association." }
+  ],
+
+  "cta_title": "Got something that has to go right?",
+  "cta_text": "Tell me what you're running. I'll tell you how I'd handle it."
+}

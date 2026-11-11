@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% set pageTitle = (title + " | " + settings.site_title) if title else (settings.site_title + " | Event Management, Campaigns & Operations") %}
+  <title>{{ pageTitle }}</title>
+  <meta name="description" content="{{ summary or settings.site_description }}">
+  <meta name="theme-color" content="#141214">
+  <meta property="og:title" content="{{ title or settings.site_title }}">
+  <meta property="og:description" content="{{ summary or settings.site_description }}">
+  <meta property="og:image" content="{{ image or settings.share_image }}">
+  <meta property="og:type" content="{{ 'article' if layout == 'case-study.njk' else 'website' }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23141214'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-style='italic' font-size='40' fill='%23fff'%3EM%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <script>
+    if (/(invite|recovery|confirmation|email_change)_token=/.test(location.hash) && !location.pathname.startsWith('/admin')) location.replace('/admin/' + location.hash);
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="/" class="brand" aria-label="{{ settings.site_title }}, home"><img src="{{ settings.logo }}" alt="{{ settings.site_title }}" width="150" height="60"></a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav id="nav" class="nav" aria-label="Main">
+        {% set nav = [["/work/","Work"],["/#services","Services"],["/about/","About"]] %}
+        {% for n in nav %}<a href="{{ n[0] }}"{% if page.url == n[0] %} aria-current="page"{% endif %}>{{ n[1] }}</a>{% endfor %}
+        <a class="btn btn-light" href="/contact/">Start a project</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    {{ content | safe }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <img src="{{ settings.logo }}" alt="{{ settings.site_title }}" width="170" height="68" loading="lazy" class="footer-logo">
+        <p class="muted">Event management, campaign operations, and the systems behind them. {{ settings.location }}.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="/work/">Work</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        {% if settings.email %}<li><a href="mailto:{{ settings.email }}">{{ settings.email }}</a></li>{% endif %}
+        {% if settings.phone %}<li><a href="tel:{{ settings.phone | tel }}">{{ settings.phone }}</a></li>{% endif %}
+        {% if settings.linkedin %}<li><a href="{{ settings.linkedin }}" target="_blank" rel="noopener">LinkedIn</a></li>{% endif %}
+        {% if settings.instagram %}<li><a href="{{ settings.instagram }}" target="_blank" rel="noopener">Instagram</a></li>{% endif %}
+      </ul>
+    </div>
+    <div class="wrap footer-base">© {{ "" | year }} Manage the Event · {{ settings.owner }}</div>
+  </footer>
+  <script src="/js/site.js" defer></script>
+</body>
+</html>

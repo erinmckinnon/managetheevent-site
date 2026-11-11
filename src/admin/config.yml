@@ -1,0 +1,111 @@
+# Website editor for managetheevent.com. Log in at /admin
+backend:
+  name: git-gateway
+  branch: main
+  commit_messages:
+    create: 'Add {{collection}} “{{slug}}” (via website editor)'
+    update: 'Update {{collection}} “{{slug}}” (via website editor)'
+    delete: 'Delete {{collection}} “{{slug}}” (via website editor)'
+    uploadMedia: 'Upload file “{{path}}” (via website editor)'
+    deleteMedia: 'Delete file “{{path}}” (via website editor)'
+
+media_folder: src/uploads
+public_folder: /uploads
+publish_mode: simple
+site_url: https://managetheevent.netlify.app
+locale: en
+
+collections:
+  - name: work
+    label: "📁 Case Studies"
+    label_singular: "Case Study"
+    description: "Each case study gets its own page and a card on the Work page. Lower “Order” numbers show first. Turn on “Featured” to put it on the homepage."
+    folder: src/work
+    create: true
+    slug: "{{slug}}"
+    editor: { preview: false }
+    sortable_fields: [order, date, title]
+    summary: "{{order}}. {{title}}"
+    fields:
+      - { label: "Title", name: title, widget: string }
+      - { label: "Subtitle", name: subtitle, widget: string, required: false }
+      - { label: "Card summary", name: summary, widget: text, hint: "One or two sentences shown on the card and in link previews." }
+      - { label: "Category", name: category, widget: string, hint: "e.g. Civic, Sampling programs, Signature events" }
+      - { label: "Client / organization", name: client, widget: string, required: false }
+      - { label: "Date", name: date, widget: datetime, date_format: "MMM D, YYYY", time_format: false, format: "YYYY-MM-DD" }
+      - { label: "Order", name: order, widget: number, value_type: int, default: 10 }
+      - { label: "Featured on homepage", name: featured, widget: boolean, default: false, required: false }
+      - { label: "Main photo", name: image, widget: image }
+      - { label: "Full case study PDF link", name: pdf, widget: string, required: false, hint: "Optional. Paste a Canva or PDF link to show a button." }
+      - { label: "Photo gallery", name: gallery, widget: list, required: false, field: { label: Photo, name: photo, widget: image } }
+      - { label: "Hide from site (draft)", name: draft, widget: boolean, default: false, required: false }
+      - { label: "Story", name: body, widget: markdown }
+
+  - name: pages
+    label: "📄 Pages"
+    editor: { preview: false }
+    files:
+      - label: "🏠 Homepage"
+        name: home
+        file: src/_data/home.json
+        fields:
+          - { label: "Small line above headline", name: hero_kicker, widget: string }
+          - { label: "Headline", name: hero_title, widget: string }
+          - { label: "Intro (blank line = new paragraph)", name: hero_intro, widget: text }
+          - { label: "“Currently” note", name: hero_note, widget: string, required: false }
+          - { label: "Photo", name: hero_image, widget: image }
+          - label: "Numbers strip"
+            name: stats
+            widget: list
+            fields: [{ label: Number, name: number, widget: string }, { label: Label, name: label, widget: string }]
+          - { label: "Big statement heading", name: manifesto_title, widget: string }
+          - { label: "Big statement text", name: manifesto_text, widget: text }
+          - { label: "Services heading", name: services_title, widget: string }
+          - { label: "Services intro", name: services_intro, widget: string }
+          - label: "Services"
+            name: services
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: text, widget: text }
+              - { label: "Bullet points", name: points, widget: list, required: false, field: { label: Point, name: point, widget: string } }
+          - { label: "Process heading", name: process_title, widget: string }
+          - label: "Process steps"
+            name: process
+            widget: list
+            fields: [{ label: Title, name: title, widget: string }, { label: Text, name: text, widget: text }]
+          - { label: "Roles heading", name: roles_title, widget: string }
+          - label: "Current roles"
+            name: roles
+            widget: list
+            fields: [{ label: Organization, name: org, widget: string }, { label: Role, name: role, widget: string }, { label: Description, name: text, widget: text }]
+          - { label: "Bottom banner heading", name: cta_title, widget: string }
+          - { label: "Bottom banner text", name: cta_text, widget: string }
+      - label: "👤 About"
+        name: about
+        file: src/_data/about.json
+        fields:
+          - { label: "Page title", name: title, widget: string }
+          - { label: "Big intro line", name: intro, widget: text }
+          - { label: "Story (blank line = new paragraph)", name: body, widget: text }
+          - { label: "“Right now” list", name: highlights, widget: list, field: { label: Item, name: item, widget: string } }
+          - { label: "Photo", name: image, widget: image, required: false }
+
+  - name: settings
+    label: "⚙️ Site Settings"
+    editor: { preview: false }
+    files:
+      - label: "Site settings"
+        name: settings
+        file: src/_data/settings.json
+        fields:
+          - { label: "Site name", name: site_title, widget: string }
+          - { label: "Description for Google and link previews", name: site_description, widget: text }
+          - { label: "Your name", name: owner, widget: string }
+          - { label: "Location", name: location, widget: string }
+          - { label: "Public email", name: email, widget: string, required: false }
+          - { label: "Public phone", name: phone, widget: string, required: false }
+          - { label: "LinkedIn URL", name: linkedin, widget: string, required: false }
+          - { label: "Instagram URL", name: instagram, widget: string, required: false }
+          - { label: "Logo", name: logo, widget: image }
+          - { label: "Default share image", name: share_image, widget: image }
