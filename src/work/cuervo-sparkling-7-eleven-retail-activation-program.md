@@ -1,6 +1,6 @@
 ---
 title: "Building a Tracked Field Program: Jose Cuervo Sparkling at 7-Eleven and Speedway"
-subtitle: "How I designed, launched, and run a statewide retail activation program covering 730 Florida stores, with every call, visit, and order tracked in real time."
+subtitle: "How I designed, launched, and am running a statewide retail activation program covering 730 Florida stores, with every call, visit, and order tracked in real time."
 summary: "A statewide field rep program putting Jose Cuervo Sparkling on shelves at 730 Florida 7-Eleven and Speedway stores, built so every call, visit, and order is tracked live."
 category: "Retail activation"
 client: "Proximo Spirits"
@@ -54,17 +54,11 @@ Every visit ends with a structured recap: exterior and in-store photos, placemen
 
 **Client results and a weekly follow-up report.** The client and distributor see results store by store, add their own notes, and work from one shared follow-up report each week, so every order and issue gets handled.
 
-## Early Results
+## Where It Stands
 
-The program launched with a test group of reps in October 2026 to refine the process before a full rollout. In the first weeks:
+The program launched in October 2026 with a test group of reps, so the process could be refined before the full rollout. It's in progress now, with routes running across the state.
 
-- 730 stores mapped into 90 routes across 12 regions
-- 262 pre-visit calls logged
-- 187 store visits completed and reported
-- 35 orders secured, with managers ordering on the spot, committing to order, or confirming the product was already on its way
-- District and store managers requesting in-store tastings after their first shipment
-
-Just as valuable: the program surfaced exactly why stores weren't ordering, from delivery issues to system listings, so the brand and distributor could fix the problems behind the numbers.
+What's already clear is how much the structure reveals. Every visit shows not just whether a store ordered, but why or why not, from delivery issues to system listings, so the brand and distributor can fix the problems behind the numbers while the program is still running.
 
 ## Why It Works
 
