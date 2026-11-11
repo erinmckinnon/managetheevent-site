@@ -241,7 +241,7 @@ p { margin: 0 0 1em; }
 }
 .credit span { white-space: nowrap; }
 
-/* Readability: sturdier Bodoni cut (lower optical size = thicker hairlines), more weight, fully lit headlines */
+/* Readability: sturdier headings, fully lit headlines */
 h1, h2, h3, .figure, .tile-figure, .tile-title, .ros-cue, .credit p, .about-prose p:first-child {
   font-optical-sizing: auto;
   font-weight: 500;
@@ -269,3 +269,11 @@ body { font-size: 1.0938rem; letter-spacing: .005em; }
 .manifesto h2, .credits h2 { font-weight: 400; }
 .figure, .tile-figure { font-weight: 600; }
 .btn, .nav a { letter-spacing: .01em; }
+
+/* Credits on phones: one name per line, like a printed program */
+@media (max-width: 720px) {
+  .credits-roll { gap: 2.25rem; }
+  .credit p { font-size: 1.35rem; line-height: 1.5; }
+  .credit span { display: block; white-space: normal; }
+  .credit span:not(:last-child)::after { content: none; }
+}

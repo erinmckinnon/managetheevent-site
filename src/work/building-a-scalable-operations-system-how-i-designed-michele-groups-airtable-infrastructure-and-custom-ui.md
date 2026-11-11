@@ -5,8 +5,8 @@ summary: "Transforming national event staffing workflows with a fully custom Air
 category: "Operations systems"
 client: "Michele & Group"
 order: 2
-figure: "176 events"
-figure_label: "across 20 states in a single weekend, run on one system"
+figure: "528 activations"
+figure_label: "booked and run over Memorial Day weekend 2026, all on this system"
 date: 2025-12-10
 image: /uploads/work/mg-airtable-system.png
 featured: true
