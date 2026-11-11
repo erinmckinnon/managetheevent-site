@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200">
+  <rect width="1600" height="1200" fill="#241321"/>
+  <g fill="none" stroke="#7c4d72" stroke-width="3" stroke-dasharray="2 14" stroke-linecap="round" opacity=".9">
+    <path d="M1180 140 C1150 260 1230 330 1210 450 S1260 640 1300 760 S1360 960 1420 1080"/>
+    <path d="M980 300 C900 380 860 470 900 560 S860 760 820 860"/>
+    <path d="M1180 140 C1080 180 1000 230 980 300"/>
+    <path d="M900 560 C980 600 1080 620 1210 640"/>
+    <path d="M820 860 C900 900 1000 960 1120 1000"/>
+  </g>
+  <g fill="#c9a36a">
+    <circle cx="1180" cy="140" r="9"/><circle cx="1210" cy="450" r="9"/><circle cx="1300" cy="760" r="9"/>
+    <circle cx="1420" cy="1080" r="9"/><circle cx="980" cy="300" r="9"/><circle cx="900" cy="560" r="9"/>
+    <circle cx="820" cy="860" r="9"/><circle cx="1210" cy="640" r="9"/><circle cx="1120" cy="1000" r="9"/>
+  </g>
+  <g fill="#fff3e0" opacity=".35">
+    <circle cx="1040" cy="420" r="5"/><circle cx="1110" cy="520" r="5"/><circle cx="1260" cy="560" r="5"/>
+    <circle cx="960" cy="700" r="5"/><circle cx="1050" cy="800" r="5"/><circle cx="1340" cy="900" r="5"/>
+    <circle cx="1240" cy="300" r="5"/><circle cx="880" cy="980" r="5"/>
+  </g>
+  <text x="110" y="560" font-family="Georgia, serif" font-size="230" fill="#c9a36a" letter-spacing="-6">730</text>
+  <text x="118" y="660" font-family="Georgia, serif" font-size="74" fill="#fff3e0">stores</text>
+  <text x="118" y="760" font-family="Helvetica, Arial, sans-serif" font-size="40" fill="#bba4b5">90 routes · 12 Florida regions</text>
+  <text x="118" y="1080" font-family="Helvetica, Arial, sans-serif" font-size="34" fill="#bba4b5">Jose Cuervo Sparkling × 7-Eleven / Speedway</text>
+</svg>

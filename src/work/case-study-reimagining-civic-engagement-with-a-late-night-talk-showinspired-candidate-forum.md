@@ -9,7 +9,7 @@ figure: "Talk-show format"
 figure_label: "moderators seated with the candidates, not behind podiums"
 date: 2025-12-10
 image: /uploads/work/candidate-forum.jpg
-featured: true
+featured: false
 ---
 
 In October, the Tampa Heights Civic Association hosted the District 5 City Council Runoff Candidate Forum, an event intentionally designed to break the mold of traditional political debates. Instead of rigid podiums and formal speeches, we created a late-night talk show–inspired experience that encouraged authenticity, conversation, and community connection.
