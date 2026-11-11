@@ -240,3 +240,25 @@ p { margin: 0 0 1em; }
   .stage-light { background-attachment: scroll; }
 }
 .credit span { white-space: nowrap; }
+
+/* Readability: sturdier Bodoni cut (lower optical size = thicker hairlines), more weight, fully lit headlines */
+h1, h2, h3, .figure, .tile-figure, .tile-title, .ros-cue, .credit p, .about-prose p:first-child {
+  font-optical-sizing: none;
+  font-variation-settings: "opsz" 20;
+  font-weight: 600;
+}
+.manifesto h2, .credits h2 { font-weight: 500; }
+.stage-title, .curtain h2 {
+  background: none; color: var(--light);
+  letter-spacing: -0.02em;
+  text-shadow: 0 0 60px #fff3e014;
+}
+.stage-title { line-height: .95; }
+.stage-light {
+  background:
+    radial-gradient(620px circle at var(--x) var(--y), #fff3e02a, #fff3e00d 45%, transparent 72%),
+    radial-gradient(900px 600px at 85% 110%, #7c4d7255, transparent 70%),
+    var(--stage);
+  background-attachment: fixed;
+}
+@media (hover: none) { .stage-light { background-attachment: scroll; } }
