@@ -1,4 +1,4 @@
-/* Manage the Event: a dark stage, a single spotlight, playbill type. */
+/* Manage the Event: a dark stage, a single spotlight, Fraunces + Jost. */
 :root {
   --stage: #170d15;      /* house-lights-down plum black */
   --curtain: #241321;    /* velvet */
@@ -8,8 +8,8 @@
   --mauve: #bba4b5;      /* secondary text on stage */
   --paper: #f6eee4;      /* playbill paper */
   --ink: #2a1726;
-  --display: "Bodoni Moda", "Didot", Georgia, serif;
-  --sans: "Instrument Sans", system-ui, sans-serif;
+  --display: "Fraunces", Georgia, serif;
+  --sans: "Jost", system-ui, sans-serif;
   --x: 32vw; --y: 55vh;
 }
 *, *::before, *::after { box-sizing: border-box; }
@@ -243,9 +243,8 @@ p { margin: 0 0 1em; }
 
 /* Readability: sturdier Bodoni cut (lower optical size = thicker hairlines), more weight, fully lit headlines */
 h1, h2, h3, .figure, .tile-figure, .tile-title, .ros-cue, .credit p, .about-prose p:first-child {
-  font-optical-sizing: none;
-  font-variation-settings: "opsz" 20;
-  font-weight: 600;
+  font-optical-sizing: auto;
+  font-weight: 500;
 }
 .manifesto h2, .credits h2 { font-weight: 500; }
 .stage-title, .curtain h2 {
@@ -262,3 +261,11 @@ h1, h2, h3, .figure, .tile-figure, .tile-title, .ros-cue, .credit p, .about-pros
   background-attachment: fixed;
 }
 @media (hover: none) { .stage-light { background-attachment: scroll; } }
+
+/* Fraunces + Jost tuning */
+body { font-size: 1.0938rem; letter-spacing: .005em; }
+.stage-title { letter-spacing: -0.03em; line-height: .98; }
+.curtain h2 { letter-spacing: -0.03em; }
+.manifesto h2, .credits h2 { font-weight: 400; }
+.figure, .tile-figure { font-weight: 600; }
+.btn, .nav a { letter-spacing: .01em; }
