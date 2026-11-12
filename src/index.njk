@@ -5,13 +5,16 @@ bodyClass: home
 <section class="stage" data-spotlight>
   <div class="stage-light" aria-hidden="true"></div>
   <div class="wrap stage-inner">
-    <h1 class="stage-title">{{ home.hero_title }}</h1>
-    <div class="stage-foot">
-      <p class="stage-intro">{{ home.hero_intro }}</p>
-      <div class="stage-actions">
-        <a class="btn btn-brass" href="/contact/">Start a project</a>
-        <a class="btn btn-line" href="/work/">See the work</a>
+    <div class="stage-grid">
+      <div class="stage-copy">
+        <h1 class="stage-title">{{ home.hero_title }}</h1>
+        <p class="stage-intro">{{ home.hero_intro }}</p>
+        <div class="stage-actions">
+          <a class="btn btn-brass" href="/contact/">Start a project</a>
+          <a class="btn btn-line" href="/work/">See the work</a>
+        </div>
       </div>
+      {% if home.hero_image %}<figure class="stage-photo"><img src="{{ home.hero_image }}" alt="Erin McKinnon" width="900" height="1100"></figure>{% endif %}
     </div>
     {% if home.hero_note %}<p class="stage-note"><span class="live" aria-hidden="true"></span>{{ home.hero_note }}</p>{% endif %}
   </div>
@@ -66,8 +69,7 @@ bodyClass: home
 
 <section class="bio" aria-labelledby="bio-h">
   <div class="wrap bio-inner">
-    <figure class="bio-photo"><img src="{{ home.bio_image }}" alt="Erin McKinnon" loading="lazy"></figure>
-    <div class="bio-copy">
+        <div class="bio-copy">
       <h2 id="bio-h">{{ home.bio_title }}</h2>
       {{ home.bio_text | paras | safe }}
       <a class="text-link" href="/about/">The longer story</a>

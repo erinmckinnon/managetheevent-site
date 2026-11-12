@@ -54,6 +54,7 @@ collections:
           - { label: "Big headline", name: hero_title, widget: string }
           - { label: "Intro under the headline", name: hero_intro, widget: text }
           - { label: "“Now running” note", name: hero_note, widget: string, required: false }
+          - { label: "Photo next to the headline", name: hero_image, widget: image }
           - { label: "Statement heading", name: manifesto_title, widget: string }
           - { label: "Statement text (blank line = new paragraph)", name: manifesto_text, widget: text }
           - { label: "Run of show heading", name: ros_title, widget: string }
