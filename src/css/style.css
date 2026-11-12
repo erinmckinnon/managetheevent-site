@@ -312,3 +312,9 @@ body { font-size: 1.0938rem; letter-spacing: .005em; }
   -webkit-mask-image: linear-gradient(#000 80%, transparent 99%); mask-image: linear-gradient(#000 80%, transparent 99%); }
 .about-side .bio-photo { aspect-ratio: 1051 / 1100; background: radial-gradient(circle at 50% 40%, #7c4d72 0%, var(--stage) 70%); }
 @media (max-width: 860px) { .stage-photo { justify-self: center; max-width: 22rem; } }
+
+/* Brighter, warmer spotlight behind the portrait so the hair blends instead of popping against the dark */
+.stage-photo::before { top: 40%; width: 115%;
+  background: radial-gradient(circle, #ffe9cc80 0%, #f2cf9e5c 22%, #c9a36a3d 40%, #7c4d7233 58%, transparent 72%); }
+.stage-photo::before { top: 42%; width: 112%;
+  background: radial-gradient(circle, #ffe6c4 0%, #f6d3a3e6 28%, #d9a96fa6 44%, #9a6a7a59 58%, #7c4d7222 66%, transparent 72%); }
