@@ -285,7 +285,7 @@ body { font-size: 1.0938rem; letter-spacing: .005em; }
 .stage-title { font-size: clamp(2.8rem, 5.6vw, 5.4rem); line-height: 1.02; max-width: 12ch; letter-spacing: -0.025em; }
 .stage-intro { margin: 1.75rem 0 2rem; font-size: 1.2rem; max-width: 32rem; }
 .stage-photo { margin: 0; aspect-ratio: 4 / 5; max-height: 640px; overflow: hidden; border-radius: 4px; background: var(--curtain); }
-.stage-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 88% 18%; }
+.stage-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; }
 .stage-note { margin-top: 3rem; }
 .curtain h2 { font-size: clamp(3rem, 8vw, 7rem); }
 .bio-inner { grid-template-columns: minmax(0, 46rem); justify-content: start; }
@@ -293,3 +293,4 @@ body { font-size: 1.0938rem; letter-spacing: .005em; }
   .stage-grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .stage-photo { max-width: 26rem; max-height: none; }
 }
+.about-side .bio-photo img { object-position: 50% 20%; }
